@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flavius Valentin Butilcă - Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="hero-flex">
+
+        <div class="content-side">
+          <span class="badge">UX / UI Designer</span>
+
+          <h1>Jag designar och bygger digitala upplevelser...</h1>
+
+          <p class="subtitle">
+            IT- och mediestudent med fokus på design och digitala upplevelser.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="goToSection('about')">Om mig</button>
+            <button class="btn btn-secondary" onclick="goToSection('contact')">Kontakt</button>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="aaaa.png" alt="Flavius" />
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <nav class="section-nav">
+    <button class="nav-pill active" onclick="showSection('projects', this)">Projekt</button>
+    <button class="nav-pill" onclick="showSection('skills', this)">Färdigheter</button>
+    <button class="nav-pill" onclick="showSection('about', this)">Om mig</button>
+    <button class="nav-pill" onclick="showSection('contact', this)">Kontakt</button>
+  </nav>
+
+  <section class="content-switcher">
+
+    <!-- PROJECTS -->
+    <div id="projects" class="tab-section active">
+      <p class="projects-label">UTVALDA PROJEKT</p>
+
+      <div class="projects-grid">
+
+        <a href="poster/posters.html" class="project-card">
+          <div class="project-image lavender">🖼️</div>
+          <div class="project-content">
+            <h3>Posterdesign</h3>
+            <p>Grafisk design · 2024</p>
+            <span class="project-tag">Adobe Creative Suite</span>
+          </div>
+        </a>
+
+        <a href="HeartPoint/heartpoint.html" class="project-card">
+          <div class="project-image mint">❤️</div>
+          <div class="project-content">
+            <h3>HeartPoint</h3>
+            <p>Konceptprojekt · Branding & app-idé</p>
+            <span class="project-tag">Grafisk design</span>
+          </div>
+        </a>
+
+        <div class="project-card">
+          <div class="project-image beige">🛒</div>
+          <div class="project-content">
+            <h3>E-commerce UX audit</h3>
+            <p>Retail · 2023</p>
+            <span class="project-tag">Research</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image sand">🎨</div>
+          <div class="project-content">
+            <h3>Brand system</h3>
+            <p>Startup · 2023</p>
+            <span class="project-tag">Design system</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skills" class="tab-section">
+      <h2 class="tab-title">Färdigheter & verktyg</h2>
+
+      <div class="skills-cards">
+
+        <div class="skill-box overlay-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Adobe Creative Suite</h3>
+          <p>Photoshop, Illustrator, Premiere Pro</p>
+          <div class="overlay-text">
+            Under min tid som jag har studerat på Södertörns och på gymnasiet har jag använt mig av dessa program.
+            Jag har grunderna och kan navigera mig lätt i dessa appar, och jag har även gjort vissa projekt som kan ses på min projektsida.
+          </div>
+        </div>
+
+        <div class="skill-box overlay-card">
+          <div class="skill-icon">💻</div>
+          <h3>Figma</h3>
+          <p>UI/UX-design och prototyping</p>
+          <div class="overlay-text">
+            Figma har jag använt under min högskoleutbildning. Jag har använt den för att skapa olika layouter för hemsidor i vissa projekt.
+            Jag fick även ett arbete hos ett företag där jag använde Figma för att designa deras visitkort.
+          </div>
+        </div>
+
+        <div class="skill-box overlay-card">
+          <div class="skill-icon">🧩</div>
+          <h3>Visual Studio</h3>
+          <p>Kodutveckling & programmering</p>
+          <div class="overlay-text">
+            Jag har använt Visual Studio för att utveckla projekt inom webbutveckling och programmering.
+            Jag har erfarenhet av HTML, CSS, JavaScript och C#, och använder miljön för att skriva, testa och förbättra min kod.
+          </div>
+        </div>
+
+        <div class="skill-box overlay-card">
+          <div class="skill-icon">🎮</div>
+          <h3>Unity</h3>
+          <p>Spelutveckling & interaktiva upplevelser</p>
+          <div class="overlay-text">
+            Unity har jag använt under min gymnasietid där jag fick skapa några enklare spel och lära mig hur programmet fungerar.
+            Det gav mig förståelse för spelmotorer, logik och hur man bygger interaktiva upplevelser.
+          </div>
+        </div>
+
+        <div class="skill-box overlay-card">
+          <div class="skill-icon">📦</div>
+          <h3>3D-modellering</h3>
+          <p>Grundläggande 3D-design</p>
+          <div class="overlay-text">
+            Under min gymnasietid använde jag mig av Maya och Blender för att skapa olika 3D-modelleringar.
+            Genom dessa projekt fick jag en god förståelse för grunderna inom 3D-design och hur man bygger upp modeller från idé till färdig form.
+          </div>
+        </div>
+
+        <div class="skill-box overlay-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>Databashantering</h3>
+          <p>SQL, phpMyAdmin & MediaLab</p>
+          <div class="overlay-text">
+            Jag har arbetat med SQL och phpMyAdmin för att hantera databaser, skapa tabeller och arbeta med dataflöden i webbprojekt.
+            Genom MediaLab fick jag en praktisk förståelse för hur databaser kopplas till webbsidor och används för att lagra information.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="tab-section">
+      <h2 class="tab-title">Om mig</h2>
+      <div class="about-box">
+        <p>
+          Jag heter Flavius Valentin Butilcă, född 2003 i Rumänien och bosatt i Sverige sedan 2016.
+          Idag studerar jag IT, media och design vid Södertörns högskola med fokus på att skapa digitala upplevelser som kombinerar estetik och funktion.
+        </p>
+        <p>
+          Jag arbetar med verktyg som Adobe Creative Suite, Figma, Visual Studio och Unity, och har även grundläggande kunskaper inom 3D-modellering.
+          Mitt mål är att skapa lösningar som inte bara ser bra ut, utan också ger en smidig och genomtänkt användarupplevelse.
+        </p>
+        <p>
+          Jag drivs av nyfikenhet och viljan att ständigt utvecklas. Genom mina studier och projekt bygger jag vidare på mina kunskaper inom UI/UX,
+          design och webbutveckling, med ambitionen att arbeta professionellt inom området.
+        </p>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="tab-section">
+      <h2 class="tab-title">Kontakt</h2>
+
+      <div class="contact-box">
+        <form 
+          class="contact-form" 
+          action="https://formspree.io/f/mnjlwegj" 
+          method="POST"
+          id="contactForm"
+          >
+          <input type="text" name="name" placeholder="Ditt namn" required />
+
+          <input type="email" name="email" placeholder="Din email" required />
+
+          <textarea 
+            name="message" 
+            placeholder="Skriv ditt meddelande..." 
+            required
+          ></textarea>
+
+          <button type="submit" class="btn btn-primary">
+            Skicka meddelande
+          </button>
+
+          <!-- här visas meddelande -->
+          <p id="form-status"></p>
+        </form>
+
+        <div class="social-links">
+          <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=flaviusvali10@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-pill"
+            > 
+            <i class="fa-solid fa-envelope"></i>
+            <span>E-post</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/flavius-butilca-669b351a3/" target="_blank" class="social-pill">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://www.instagram.com/butilcaflavius/" target="_blank" class="social-pill">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://www.facebook.com/butilca.flavius/" target="_blank" class="social-pill">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

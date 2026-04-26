@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posterdesign – Flavius Valentin Butilcă</title>
+
+  <link rel="stylesheet" href="posters.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<script>
+  function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").classList.add("active");
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("active");
+  }
+</script>
+
+<body>
+
+<main class="poster-page">
+  <div class="poster-container">
+
+    <a href="/index.html" class="back-link">← Tillbaka</a>
+
+    <!-- HEADER -->
+    <header class="page-header">
+      <span class="page-badge">Portfolio</span>
+      <h1>Poster & design</h1>
+      <p class="page-intro">
+        Här visar jag både skolprojekt och egna posters som jag gjort på fritiden och under praktik.
+      </p>
+    </header>
+
+    <!-- SKOLPROJEKT (BEHÅLL DENNA) -->
+    <section class="project-list">
+
+      <article class="project-showcase">
+        <div class="project-media">
+          <img src="Butilca_Flavius_Popart-1.jpg" alt="Skolposter" />
+        </div>
+
+        <div class="project-info">
+          <span class="project-type">Grafisk design</span>
+          <h2>Poster – Skolprojekt</h2>
+
+          <p>
+            Detta är en poster jag skapade i skolan som en del av ett projekt om hållbar utveckling.
+            Jag experimenterade med färger, layout och hur budskap kan förstärkas visuellt.
+          </p>
+
+          <div class="project-meta">
+            <span>Photoshop</span>
+            <span>Skolprojekt</span>
+          </div>
+
+          <a href="Butilca_Flavius_Dokumentation_Poster.-1.pdf" target="_blank" class="project-btn">
+            Öppna dokumentation
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- EGNA POSTERS -->
+    <section class="poster-collection">
+
+      <h2>Egna posters</h2>
+
+      <p class="collection-intro">
+        Posters jag har gjort på fritiden och under praktik.
+        Fokus på kreativ design, typografi och visuellt uttryck.
+      </p>
+
+      <div class="poster-grid">
+  <img src="Varg.png" alt="Varg poster" onclick="openLightbox(this.src)" />
+  <img src="nike.png" alt="Nike poster" onclick="openLightbox(this.src)" />
+  <img src="press start.png" alt="Press Start poster" onclick="openLightbox(this.src)" />
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Stor poster" />
+</div>
+
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>
